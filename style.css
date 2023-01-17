@@ -9,13 +9,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 a {
     margin: 50px;
     background-color: rgb(43, 42, 42);
     height: 70px;
+    min-height: 50px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -23,15 +28,17 @@ a {
     border-radius: 10px;
     cursor: pointer;
     font-size: larger;
+    box-shadow: 4px 4px 0 #ffd300; 
+    text-decoration: none;
+    color: #ffd300;
+    font-weight: bold;
 }
 
 a:hover {
-    /* background-color: rgb(255, 230, 0); */
-    box-shadow: 4px 4px 0 rgb(255, 211, 14); 
-    transform: translateX(-4px) translateY(-4px);
+    background-color: rgb(66, 65, 65);
 }
 
 a:active {
-    box-shadow: 0 0 0 rgb(255, 211, 14); 
-    transform: translateX(0) translateY(0);
+    box-shadow: 0 0 0; 
+    transform: translateX(4px) translateY(4px);
 }
