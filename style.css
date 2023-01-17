@@ -27,6 +27,11 @@ a {
 
 a:hover {
     /* background-color: rgb(255, 230, 0); */
-    box-shadow: 4px 4px 4px rgb(255, 211, 14); 
-    transform: translateX(4px);
+    box-shadow: 4px 4px 0 rgb(255, 211, 14); 
+    transform: translateX(-4px) translateY(-4px);
+}
+
+a:active {
+    box-shadow: 0 0 0 rgb(255, 211, 14); 
+    transform: translateX(0) translateY(0);
 }
